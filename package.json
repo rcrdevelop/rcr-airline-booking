@@ -27,7 +27,9 @@
   "dependencies": {
     "@quasar/extras": "^2.1.0",
     "firebase": "^13.0.0",
+    "pdf-lib": "^1.17.1",
     "pinia": "^4.0.2",
+    "qrcode": "^1.5.4",
     "quasar": "^2.35.1",
     "vue": "^3.5.22",
     "vue-router": "^5.0.6"
@@ -35,6 +37,7 @@
   "devDependencies": {
     "@quasar/app-vite": "^3.10.2",
     "@types/node": "^22.19.11",
+    "@types/qrcode": "^1.5.6",
     "autoprefixer": "^10.4.27",
     "oxfmt": "^0.x",
     "oxlint": "^1.x",

@@ -37,10 +37,34 @@ declare module 'vue-router/auto-routes' {
       Record<never, never>,
       Record<never, never>,
       | '//(index)'
+      | '//estado'
+      | '//gestionar'
+      | '//reservar'
     >,
     '//(index)': RouteRecordInfo<
       '//(index)',
       '/',
+      Record<never, never>,
+      Record<never, never>,
+      | never
+    >,
+    '//estado': RouteRecordInfo<
+      '//estado',
+      '/estado',
+      Record<never, never>,
+      Record<never, never>,
+      | never
+    >,
+    '//gestionar': RouteRecordInfo<
+      '//gestionar',
+      '/gestionar',
+      Record<never, never>,
+      Record<never, never>,
+      | never
+    >,
+    '//reservar': RouteRecordInfo<
+      '//reservar',
+      '/reservar',
       Record<never, never>,
       Record<never, never>,
       | never
@@ -69,6 +93,9 @@ declare module 'vue-router/auto-routes' {
       routes:
         | '/'
         | '//(index)'
+        | '//estado'
+        | '//gestionar'
+        | '//reservar'
       views:
         | 'default'
       pathParamNames:
@@ -77,6 +104,30 @@ declare module 'vue-router/auto-routes' {
     'src/pages/index/(index).vue': {
       routes:
         | '//(index)'
+      views:
+        | never
+      pathParamNames:
+        | never
+    }
+    'src/pages/index/estado.vue': {
+      routes:
+        | '//estado'
+      views:
+        | never
+      pathParamNames:
+        | never
+    }
+    'src/pages/index/gestionar.vue': {
+      routes:
+        | '//gestionar'
+      views:
+        | never
+      pathParamNames:
+        | never
+    }
+    'src/pages/index/reservar.vue': {
+      routes:
+        | '//reservar'
       views:
         | never
       pathParamNames:
